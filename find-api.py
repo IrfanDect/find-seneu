@@ -23,7 +23,7 @@ class Main:
         self.ip_address = input('hostname : ')
         time.sleep(1)
         self.so = socket.gethostbyname(self.ip_address)
-        self.auth = '6ea90bb3-e2cf-4648-b44e-f7466909f2da'
+        self.auth = 'seneu-key anda'
         self.url = f'https://ipfind.co/?auth={self.auth}&ip={self.so}'
         self.response = httpx.get(self.url)
         self.data = json.loads(self.response.text)
